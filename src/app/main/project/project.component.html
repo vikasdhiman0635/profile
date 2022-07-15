@@ -1,0 +1,232 @@
+<app-navbar [project]="project"></app-navbar>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">
+                Projects
+            </h1>
+            <hr style="color: white; background-color: white; margin-left: 45%; margin-right: 45%; height: 2px;" />
+            <br>
+            <p class="text-center" style="font-size: 14px;">
+                “A project is any undertaking, carried out individually or collaboratively and possibly involving
+                research or design, that is carefully planned to achieve a particular aim.”
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4 boxx" *ngFor="let data of projects">
+            <img [src]="data.image" class="image" width="100%" alt="">
+            
+            <div class="content">
+                <h4>{{data.projectname}}</h4>
+                <small>{{data.projectType}}</small><br>
+                <button class="openproject" (click)="check(data.id)"><i class="fa fa-paperclip"></i></button>
+                <a *ngIf="data.link!=''" target="_blank" [href]="data.link" class="openproject"><i class="fa fa-link"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- <div class="col-md-4 col-lg-4 col-xxl-4 col-sm-6 col-xs-12">
+            <div class="card"
+                style="width: 100%; background-color: black; border: 2px solid white; border-radius: 5px;">
+                <img class="card-img-top" src="../../../assets/projectscreenshots/onlineshoping.webp" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-title">
+                        <h4>Online Shopping</h4>
+                    </p>
+                    <p class="card-text" style="color: white;">A typical online store enables the customer to browse
+                        the firm's range of
+                        products and services, view photos or images of the products, along with information about
+                        the product specifications, features and prices.</p>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="col-md-4 col-lg-4 col-xxl-4 col-sm-6 col-xs-12">
+            <div class="card"
+                style="width: 100%; background-color: black; border: 2px solid white; border-radius: 5px;">
+                <img class="card-img-top" src="http://www.foodenginepos.com/img/features/Online_Apps.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-title">
+                    <h4>Online Food Ordering</h4>
+                    </p>
+                    <p class="card-text" style="color: white;">A typical online store enables the customer to browse
+                        the firm's range of
+                        products and services, view photos or images of the products, along with information about
+                        the product specifications, features and prices.<br><br> <br></p>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="col-md-4 col-lg-4 col-xxl-4 col-sm-6 col-xs-12">
+            <div class="card"
+                style="width: 100%; background-color: black; border: 2px solid white; border-radius: 5px;">
+                <img class="card-img-top" src="../../../assets/projectscreenshots/smart-city.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-title">
+                    <h4>Smart City</h4>
+                    </p>
+                    <p class="card-text" style="color: white;">This is a social project. Any person can improve your
+                        social skills about Panipat history and others like Panipat public service, Panipat online
+                        marketing, and Panipat industry.
+                        This project made in angular and spring boot ( microservices, Spring security ) and backend.
+                        This project made by Vikas Dhiman.<br><br></p>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="col-md-4 col-lg-4 col-xxl-4 col-sm-6 col-xs-12">
+            <div class="card"
+                style="width: 100%; background-color: black; border: 2px solid white; border-radius: 5px;">
+                <img class="card-img-top" src="../../../assets/projectscreenshots/livechat.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-title">
+                        <h4>Global Chat</h4>
+                    </p>
+                    <p class="card-text" style="color: white;">This project created in Angular & firebase.
+                        In this project you can log in and after you can create a room and invite your friend after
+                        you can chat.
+                    </p>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div class="col-md-4 col-lg-4 col-xxl-4 col-sm-6 col-xs-12">
+            <div class="card"
+                style="width: 100%; background-color: black; border: 2px solid white; border-radius: 5px;">
+                <img class="card-img-top" src="../../../assets/projectscreenshots/bus-service.png" class="image" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-title">
+                    <h4>Indian Bus</h4>
+                    </p>
+                    <p class="card-text" style="color: white;">This is a very advanced project. this project is
+                        created in Angular 11, Spring Boot, Microservice, Hibernate, Rest API, MySQL, This is the
+                        social project.
+                    </p>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="col-md-4 col-lg-4 col-xxl-4 col-sm-6 col-xs-12">
+            <div class="card"
+                style="width: 100%; background-color: black; border: 2px solid white; border-radius: 5px;">
+                <img class="card-img-top" src="../../../assets/projectscreenshots/ayuda.png" class="image" alt="Card image cap">
+                <div class="content">
+                    <h4>Ayuda Project</h4>
+                    <small>Web App</small><br>
+                    <button class="openproject"><i class="fa fa-paperclip"></i></button>
+                </div>
+                <div class="card-body">
+                    <p class="card-title">
+                    <h4>Ayuda</h4>
+                    </p>
+                    <p class="card-text" style="color: white;">This is the company project.
+                        This project is a universal project. In this project, the user can check the Covid-19 status.
+                        <br>
+                        <br>                            
+                    </p>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="col-md-4 boxx">
+            <img src="../../../assets/projectscreenshots/ayuda.png" class="image" width="100%" alt="">
+            
+            <div class="content">
+                <h4>Ayuda Project</h4>
+                <small>Web App</small><br>
+                <button class="openproject"><i class="fa fa-paperclip"></i></button>
+                <a class="openproject float-right"><i class="fa fa-link"></i></a>
+            </div>
+        </div>
+        <div class="col-md-4 boxx">
+            <img src="../../../assets/projectscreenshots/Bus1.png" class="image" width="100%" alt="">
+            
+            <div class="content">
+                <h4>Bus Service</h4>
+                <small>Web App</small><br>
+                <button class="openproject"><i class="fa fa-paperclip"></i></button>
+            </div>
+        </div>
+        <div class="col-md-4 boxx">
+            <img src="../../../assets/projectscreenshots/livechat.png" class="image" width="100%" alt="">
+            
+            <div class="content">
+                <h4>Live Chat</h4>
+                <small>Web App</small><br>
+                <button class="openproject"><i class="fa fa-paperclip"></i></button>
+            </div>
+        </div>
+        <div class="col-md-4 boxx">
+            <img src="../../../assets/projectscreenshots/smart-city.png" class="image" width="100%" alt="">
+            
+            <div class="content">
+                <h4>Smart City</h4>
+                <small>Web App</small><br>
+                <button class="openproject"><i class="fa fa-paperclip"></i></button>
+            </div>
+        </div>
+        <div class="col-md-4 boxx">
+            <img src="../../../assets/projectscreenshots/onlineshoping.webp" class="image" width="100%" alt="">
+            
+            <div class="content">
+                <h4>Online Shopping</h4>
+                <small>Web App</small><br>
+                <button class="openproject"><i class="fa fa-paperclip"></i></button>
+            </div>
+        </div>
+        <div class="col-md-4 boxx">
+            <img src="http://www.foodenginepos.com/img/features/Online_Apps.jpg" class="image" width="100%" alt="">
+            
+            <div class="content">
+                <h4>Online Food Ordering</h4>
+                <small>Web App</small><br>
+                <button class="openproject"><i class="fa fa-paperclip"></i></button>
+            </div>
+        </div> -->
+    </div>
+    <!-- <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card" style="width: 100%;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="card-img-top"
+                                    src="https://i0.wp.com/www.lovelycoding.org/wp-content/uploads/2020/12/Online-Shopping-System.jpg?w=680&ssl=1"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="col-md-6" style="color: black;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Online Shoping</h5>
+                                    <p class="card-text">This project made in Java and Oracle.
+                                        This is a shopping project</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card" style="width: 100%;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="card-img-top"
+                                    src="https://i0.wp.com/www.lovelycoding.org/wp-content/uploads/2020/12/Online-Shopping-System.jpg?w=680&ssl=1"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="col-md-6" style="color: black;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Smart City</h5>
+                                    <p class="card-text">This is a social project. Any person can improve your social skills about Panipat history and others like Panipat public service, Panipat online marketing, and Panipat industry.
+                                        This project made in angular and spring boot ( microservices, Spring security ) and backend.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</div>
+<br>
+<br>

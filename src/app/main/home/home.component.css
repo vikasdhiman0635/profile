@@ -1,0 +1,109 @@
+*
+{
+  color: white;
+  user-select: none;
+}
+
+.contant
+{
+    color: white;
+    margin-top: 10%;
+    letter-spacing: 2px;
+}
+.email
+{
+  border-bottom: 1px solid rgb(175, 170, 170);
+}
+.emailheading
+{
+  font-size: 24px;
+}
+.conact
+{
+  font-size: 24px;
+  margin-top: -95px;
+  border: 1px solid white;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  box-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.githubs
+{
+  padding-left: 10px;
+  cursor: pointer;
+}
+.vectors
+{
+  width: 100%;
+  height: auto;
+  margin-top: -70px;
+}
+.vectors .vector2
+{
+  margin-top: 163px;
+  margin-right: -30px;
+}
+@media only screen and (max-width: 1200px) {
+  .vector2
+  {
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  .vector1
+  {
+    margin-top: -125px;
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  #my_image
+  {
+    width: 90%;
+  }
+  .contant
+  {
+    margin-top: 100px;
+  }
+  #my_image
+  {
+    margin-top: 40px;
+  }
+  .contant h1
+  {
+    font-size: 30px; 
+  }
+  .vector2
+  {
+    display: none;
+  }
+  .vector1
+  {
+    display: none;
+  }
+  .emailheading
+  {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .home
+  {
+    align-items: center;
+    text-align: center;
+  }
+
+  #my_image
+  {
+    display: none;
+  }
+  
+  .conact
+  {
+    margin-top: 20px;
+    border: 2px solid black;
+  }
+
+}

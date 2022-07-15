@@ -1,0 +1,48 @@
+
+#heading
+{
+    text-align: center;
+    margin-top: 30px;
+}
+.resumebox
+{
+    box-shadow: 0 0 10px red;
+    padding: 20px;
+}
+.summery
+{
+    padding-left: 20px;
+}
+.summery h3{
+    /* padding: 20px; */
+}
+.contact li
+{
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.contact li a{
+    color: white;
+    text-decoration: none;
+}
+.contact li a i 
+{
+    background-color: transparent;
+    color: white;
+}
+.date
+{
+    background-color: white;
+    color: black;
+    width: 200px;
+    height: 40px;
+    padding: 6px;
+}
+/* .checkbox
+{
+    border-left: 2px solid white;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+} */

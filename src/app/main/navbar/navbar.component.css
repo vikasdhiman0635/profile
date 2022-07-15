@@ -1,0 +1,115 @@
+.navbar-brand {
+  width: auto;
+  height: 50px;
+  left: 0px;
+  font-family: Gugi;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 50px;
+  margin-left: 100px;
+  /* identical to box height */
+  letter-spacing: 2px;
+
+  display: flex;
+  align-items: center;
+  /* Fallback: Set a background color. */
+
+  background: linear-gradient(180deg, #1400FF 0%, #FF00B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.navbar-toggler {
+  outline: none;
+  transform: 1s;
+}
+
+.collapse {
+  margin-right: 100px;
+  padding: 10px 20px;
+  top: 4px;
+  text-decoration: none;
+}
+
+.collapse ul li {
+  margin-right: 50px;
+  text-align: center;
+}
+
+.collapse ul li a {
+  color: rgb(110, 105, 105);
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.collapse ul li.active a {
+  background: linear-gradient(180deg, #1400FF 0%, #FF00B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.navbar-toggler {
+  text-align: center;
+  align-content: flex-end;
+  background: linear-gradient(180deg, #1400FF 0%, #FF00B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+@media screen and (max-width:600px) {
+  section
+  {
+    align-items: center;
+    text-align: center;
+  }
+  div.navbar a
+  {
+    align-items: center;
+    text-align: center;
+  }
+  ul li a
+  {
+    align-items: center;
+    text-align: center;
+  }
+  div.collapse
+  {
+    margin: auto;
+  }
+}
+
+
+#cursor
+{
+    width: 2rem;
+    height: 2rem;
+    background: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50% -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    z-index: -1;
+    backdrop-filter: grayscale();
+}
+.link-grow{
+    transform: scale(2);
+    background: black;
+}
+.hovered-link{
+    color: white;
+}
+/* .front-cover img{
+    position: absolute;
+    z-index: -3;
+} */

@@ -1,0 +1,14 @@
+img:hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
+
+.boxx
+{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background-color: rgb(19, 18, 18);
+  
+}

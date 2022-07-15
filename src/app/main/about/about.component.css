@@ -1,0 +1,17 @@
+.container
+{
+    color: white;
+}
+#about
+{
+    letter-spacing: 2px;
+    text-align: center;
+}
+.heading
+{
+    letter-spacing: 2px;
+}
+.box
+{
+    width: 100%;
+}
